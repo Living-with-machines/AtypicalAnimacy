@@ -1,4 +1,5 @@
 import spacy
+import re
 
 
 # ------------------------------------------------------
@@ -27,6 +28,7 @@ def determine_context(current_sentence, row, context):
 # to be 3, as in Karsdorp et al.(2015).
 def ngram_context(maskedS, targetE, window):
     window_context = []
+    targetE = targetE.strip()
     maskedS = maskedS.split()
     index_mask = maskedS.index("[MASK]")
     window_indices = []
@@ -51,7 +53,7 @@ def ngram_context(maskedS, targetE, window):
 #     -> [MASK] in a boat approached him and said
 # * Replaced to:
 #     -> A [MASK] in a boat approached him and said
-def process_expression(target, masked_sentence, nlp):
+def processStories(target, masked_sentence, nlp):
     spacy_mask = nlp(target)
     first_token_mask = spacy_mask
     first_token_mask_pos = spacy_mask[0].pos_
@@ -61,7 +63,8 @@ def process_expression(target, masked_sentence, nlp):
     if first_token_mask_pos in ["DET", "NUM"] and len(spacy_mask) > 1: 
         # Remove DET or NUM from MASK, add it to context
         context_with_det = masked_sentence.replace('[MASK] ', '' + first_token_mask[0].text + ' [MASK] ')
-        target_without_det = spacy_mask[1:]
+        spacy_mask = spacy_mask[1:]
+        target_without_det = spacy_mask
         
     target_without_det = [t.text for t in target_without_det]
     target_without_det = " ".join(target_without_det)
@@ -73,6 +76,35 @@ def process_expression(target, masked_sentence, nlp):
             is_prp = True
             
     return context_with_det, target_without_det, is_prp
+
+
+def processMachines19thC(currentSentence, contextSentences, target, nlp):
+    prevSentence = ""
+    nextSentence = ""
+    
+    if len(contextSentences.split("[SEP]")) == 3:
+        prevSentence = contextSentences.split("[SEP]")[0].strip()
+        nextSentence = contextSentences.split("[SEP]")[2].strip()
+    
+    elif len(contextSentences.split("[SEP]")) == 2:
+        if "***" + target + "***" in contextSentences.split("[SEP]")[0]:
+            nextSentence = contextSentences.split("[SEP]")[1].strip()
+        elif "***" + target + "***" in contextSentences.split("[SEP]")[1]:
+            prevSentence = contextSentences.split("[SEP]")[0].strip()
+        
+    maskedSentence = currentSentence.replace("***" + target + "***", " [MASK] ", 1)
+    currentSentence = currentSentence.replace("***" + target + "***", target, 1)
+    currentSentence = currentSentence.replace("***", "")
+    maskedSentence = maskedSentence.replace("***", "")
+    maskedSentence = re.sub(' +', ' ', maskedSentence)
+    
+    spacy_mask = nlp(target)
+    # Does the target expression consist only of a personal or possessive pronoun?
+    is_prp = False
+    if len(spacy_mask) == 1:
+        if spacy_mask[0].tag_ in ["PRP", "PRP$"]:
+            is_prp = True
+    return prevSentence, currentSentence, maskedSentence, nextSentence, is_prp
 
 # ------------------------------------------------------
 # Remove rows if the target expression is not unique and
