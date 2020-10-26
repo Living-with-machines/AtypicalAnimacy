@@ -16,6 +16,27 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 ## Installation
 
+* Refer to [Anaconda website and follow the instructions](https://docs.anaconda.com/anaconda/install/).
+
+* Create a new environment for DeezyMatch
+
+```bash
+conda create -n py37animacy python=3.7
+```
+
+* Activate the environment:
+
+```bash
+conda activate py37animacy
+```
+
+* Allow the newly created `py37animacy` environment to show up in the notebooks:
+
+```bash
+python -m ipykernel install --user --name py37animacy --display-name "Python (py37animacy)"
+```
+
+
 ## Directory structure
 
 In our code, we assume the following directory structure:
