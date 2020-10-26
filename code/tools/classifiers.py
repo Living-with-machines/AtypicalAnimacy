@@ -40,18 +40,18 @@ def text_to_feature(texts,language_model,classifier):
     return X
 
 
-def classify(path,classifier,texts,type_of_training_data,training_corpus,datascenario):
+def classify(path,classifier,texts,type_of_training_data,training_corpus):
 
     tfidf_model = None
     if classifier == "tfidf_svm":
-        tfidf_model = pickle.load(open(path + "models/classifiers/" + training_corpus + datascenario + type_of_training_data + "/tfidf.pkl", "rb"))
+        tfidf_model = pickle.load(open(path + "models/classifiers/" + training_corpus + "/" + type_of_training_data + "/tfidf.pkl", "rb"))
 
     language_models = {"tfidf_svm":tfidf_model,
                        "wemb_svm":wemb_model}
 
-    models = {"bert":path + "models/classifiers/" + training_corpus + datascenario + type_of_training_data + "/bert.bin",
-              "tfidf_svm":path + "models/classifiers/" + training_corpus + datascenario + type_of_training_data + "/tfidf_svm.pkl",
-              "wemb_svm":path + "models/classifiers/" + training_corpus + datascenario + type_of_training_data + "/wemb_svm.pkl"}
+    models = {"bert":path + "models/classifiers/" + training_corpus + "/" +  type_of_training_data + "/bert.bin",
+              "tfidf_svm":path + "models/classifiers/" + training_corpus + "/" + type_of_training_data + "/tfidf_svm.pkl",
+              "wemb_svm":path + "models/classifiers/" + training_corpus + "/" + type_of_training_data + "/wemb_svm.pkl"}
     
     model_path = models[classifier]
 
