@@ -68,14 +68,8 @@ def processStories(target, masked_sentence, nlp):
         
     target_without_det = [t.text for t in target_without_det]
     target_without_det = " ".join(target_without_det)
-        
-    # Does the target expression consist only of a personal or possessive pronoun?
-    is_prp = False
-    if len(spacy_mask) == 1:
-        if spacy_mask[0].tag_ in ["PRP", "PRP$"]:
-            is_prp = True
             
-    return context_with_det, target_without_det, is_prp
+    return context_with_det, target_without_det
 
 
 def processMachines19thC(currentSentence, contextSentences, target, nlp):
@@ -99,30 +93,5 @@ def processMachines19thC(currentSentence, contextSentences, target, nlp):
     maskedSentence = re.sub(' +', ' ', maskedSentence)
     
     spacy_mask = nlp(target)
-    # Does the target expression consist only of a personal or possessive pronoun?
-    is_prp = False
-    if len(spacy_mask) == 1:
-        if spacy_mask[0].tag_ in ["PRP", "PRP$"]:
-            is_prp = True
-    return prevSentence, currentSentence, maskedSentence, nextSentence, is_prp
 
-# ------------------------------------------------------
-# Remove rows if the target expression is not unique and
-# always belongs to the same label.
-def drop_target_duplicates(tempdf):
-    dExpAnimacy = dict()
-    dCounts = dict()
-    for i, row in tempdf.iterrows():
-        if row['targetExpression'] in dExpAnimacy:
-            dExpAnimacy[row['targetExpression']].add(row['animated'])
-            dCounts[row['targetExpression']] += 1
-        else:
-            dExpAnimacy[row['targetExpression']] = {row['animated']}
-            dCounts[row['targetExpression']] = 1
-
-    dupl_to_remove = []
-    for i in dExpAnimacy:
-        if dCounts[i] > 1 and len(dExpAnimacy[i]) == 1:
-            dupl_to_remove.append(i)
-    storiesdf_uni = tempdf[~tempdf.targetExpression.isin(dupl_to_remove)]
-    return storiesdf_uni
+    return prevSentence, currentSentence, maskedSentence, nextSentence

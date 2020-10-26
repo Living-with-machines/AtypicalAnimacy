@@ -8,13 +8,10 @@ def animacy_score(predicted,scores,weighted,res_cutoff):
     tmp_scor = []
     for x in range(len(predicted)):
         if not predicted[x] == None: # Keep only 0-1 animacy values for the prediction
-            tmp_pred.append(predicted[x])
+            tmp_pred.append(int(predicted[x]))
             tmp_scor.append(scores[x])
     predicted = tmp_pred[:res_cutoff]
     scores = tmp_scor[:res_cutoff]
-    
-    # predicted = predicted[:res_cutoff]
-    # scores = scores[:res_cutoff]
     
     # Animate score per sentence
     animate = 0.0
