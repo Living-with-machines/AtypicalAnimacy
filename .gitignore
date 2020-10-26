@@ -6,5 +6,4 @@ resources
 code/.DS_Store
 code/.ipynb_checkpoints
 code/tools/__pycache__
-code/process_machines19thC_dataset.ipynb
 code/bert_sklearn.log
