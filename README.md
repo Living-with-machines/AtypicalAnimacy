@@ -30,9 +30,16 @@ conda create -n py37animacy python=3.7
 conda activate py37animacy
 ```
 
+* Clone AtypicalAnimacy repository:
+
+```bash
+git clone https://github.com/Living-with-machines/AtypicalAnimacy.git
+```
+
 * Install the requirements:
 
 ```bash
+cd /path/to/my/AtypicalAnimacy
 pip install -r requirements.txt
 ```
 
@@ -61,6 +68,29 @@ AtypicalAnimacy/
 │       └── fastai/
 └── resources/
 ```
+
+### Description of the codes
+
+To get the data to the right format, run these notebooks in the following order:
+1. `code/process_stories_dataset.ipynb`
+2. `code/process_machines19thC_dataset.ipynb`
+
+#### Masking approach
+
+To apply the masking approach, run the following notebook:
+* `code/masking_approach.ipynb`
+
+#### Classification approach
+
+To train the classifiers, run the following notebooks:
+* `code/train_bert_classifier.ipynb`
+* `code/train_svm_classifiers.ipynb`
+
+To apply the classifiers on new data, run the following notebook:
+* `code/classification_approach.ipynb`
+
+#### Sequential tagging approach
+
 
 ## Citation
 
