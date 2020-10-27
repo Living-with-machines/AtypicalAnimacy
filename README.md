@@ -30,11 +30,19 @@ conda create -n py37animacy python=3.7
 conda activate py37animacy
 ```
 
+* Install the requirements:
+
+```bash
+pip install -r requirements.txt
+```
+
 * Allow the newly created `py37animacy` environment to show up in the notebooks:
 
 ```bash
 python -m ipykernel install --user --name py37animacy --display-name "Python (py37animacy)"
 ```
+
+* Run the `code/resources_setup.ipynb` notebook, one cell at a time.
 
 
 ## Directory structure
