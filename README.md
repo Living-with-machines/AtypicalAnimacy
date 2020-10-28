@@ -49,7 +49,7 @@ pip install -r requirements.txt
 python -m ipykernel install --user --name py37animacy --display-name "Python (py37animacy)"
 ```
 
-* Run the `code/resources_setup.ipynb` notebook, one cell at a time.
+* Run the `code/setup.ipynb` notebook, one cell at a time.
 
 
 ## Directory structure
