@@ -18,7 +18,7 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 * Refer to [Anaconda website and follow the instructions](https://docs.anaconda.com/anaconda/install/).
 
-* Create a new environment for DeezyMatch
+* Create a new environment:
 
 ```bash
 conda create -n py37animacy python=3.7
