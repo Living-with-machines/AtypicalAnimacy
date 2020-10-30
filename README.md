@@ -14,6 +14,12 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 ## Table of contents
 
+* [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#installation)
+* [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#directory-structure)
+* [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#citation)
+* [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#acknowledgements)
+* [License](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#license)
+
 ## Installation
 
 * Refer to [Anaconda website and follow the instructions](https://docs.anaconda.com/anaconda/install/).
@@ -90,11 +96,25 @@ To apply the classifiers on new data, run the following notebook:
 * `code/classification_approach.ipynb`
 
 #### Sequential tagging approach
-
+To train and evaluate the LSTM classifier, run the following notebook:
+* `code/train_LSTM_seq_classifiers.ipynb`
 
 ## Citation
 
-## Get in touch
+```
+Mariona Coll Ardanuy, Federico Nanni, Kaspar Beelen, Kasra Hosseini, Ruth Ahnert, J. Lawrence, Katherine McDonough, Giorgia Tolfo, Daniel C. Wilson and Barbara McGillivray. "Living Machines: A study of atypical animacy." In Proceedings of the 28th International Conference on
+Computational Linguistics (COLING2020).
+```
+
+```
+@inproceedings{collardanuy2020living,
+    title = "Living Machines: A study of atypical animacy",
+    author = "Mariona Coll Ardanuy and Federico Nanni and Kaspar Beelen and Kasra Hosseini and Ruth Ahnert and Jon Lawrence and Katherine McDonough and Giorgia Tolfo and Daniel CS Wilson and Barbara McGillivray",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)",
+    year = "2020",
+    publisher = "Association for Computational Linguistics",
+}
+```
 
 ## Acknowledgements
 
