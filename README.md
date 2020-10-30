@@ -16,6 +16,8 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 * [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#installation)
 * [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#directory-structure)
+* [Codes](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#codes)
+* [Datasets](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#datasets)
 * [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#citation)
 * [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#acknowledgements)
 * [License](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#license)
@@ -75,18 +77,19 @@ AtypicalAnimacy/
 └── resources/
 ```
 
-### Description of the codes
+## Description of the codes
 
+### Data processing
 To get the data to the right format, run these notebooks in the following order:
 1. `code/process_stories_dataset.ipynb`
 2. `code/process_machines19thC_dataset.ipynb`
 
-#### Masking approach
+### Masking approach
 
 To apply the masking approach, run the following notebook:
 * `code/masking_approach.ipynb`
 
-#### Classification approach
+### Classification approach
 
 To train the classifiers, run the following notebooks:
 * `code/train_bert_classifier.ipynb`
@@ -95,9 +98,17 @@ To train the classifiers, run the following notebooks:
 To apply the classifiers on new data, run the following notebook:
 * `code/classification_approach.ipynb`
 
-#### Sequential tagging approach
+### Sequential tagging approach
 To train and evaluate the LSTM classifier, run the following notebook:
 * `code/train_LSTM_seq_classifiers.ipynb`
+
+## Description of the datasets
+
+Experiments are performed on two different datasets:
+* _Stories_ dataset: generated from the animacy dataset created in 
+  > Jahan, Labiba, Geeticka Chauhan, and Mark Finlayson. "A new approach to animacy detection." In Proceedings of the 27th International Conference on Computational Linguistics, pp. 1-12. 2018.
+  Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
+* _19thC Machines_ dataset: Atypical animacy dataset, annotated by us, based on nineteenth-century sentences in English extracted from an open dataset of nineteenth-century books digitized by the British Library (available via https://data.bl.uk/digbks/db14.html, DOI https://doi.org/10.21250/db14, British Library Labs, 2014). This dataset contains 598 sentences containing mentions of machines. Each sentence has been annotated according to the animacy and humanness of the machine in the sentence. A publication containing the guidelines of the dataset is **coming soon**.
 
 ## Citation
 
