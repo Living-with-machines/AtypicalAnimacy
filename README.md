@@ -16,8 +16,9 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 * [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#installation)
 * [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#directory-structure)
-* [Codes](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#codes)
-* [Datasets](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#datasets)
+* [Description of the codes](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#description-of-the-codes)
+* [Description of the datasets](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#description-of-the-datasets)
+* [Evaluation results](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#evaluation-results)
 * [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#citation)
 * [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#acknowledgements)
 * [License](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#license)
@@ -108,7 +109,13 @@ Experiments are performed on two different datasets:
 * _Stories_ dataset: generated from the animacy dataset created in 
   > Jahan, Labiba, Geeticka Chauhan, and Mark Finlayson. "A new approach to animacy detection." In Proceedings of the 27th International Conference on Computational Linguistics, pp. 1-12. 2018.
   Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
-* _19thC Machines_ dataset: Atypical animacy dataset, annotated by us, based on nineteenth-century sentences in English extracted from an open dataset of nineteenth-century books digitized by the British Library (available via https://data.bl.uk/digbks/db14.html, DOI https://doi.org/10.21250/db14, British Library Labs, 2014). This dataset contains 598 sentences containing mentions of machines. Each sentence has been annotated according to the animacy and humanness of the machine in the sentence. A publication containing the guidelines of the dataset is **coming soon**.
+* _19thC Machines_ dataset: Atypical animacy dataset, annotated by us, based on nineteenth-century sentences in English extracted from an open dataset of nineteenth-century books digitized by the British Library (available [here](https://data.bl.uk/digbks/db14.html), DOI [10.21250/db14](https://doi.org/10.21250/db14), British Library Labs, 2014). This dataset contains 598 sentences containing mentions of machines. Each sentence has been annotated according to the animacy and humanness of the machine in the sentence. You can download the annotated dataset used in our experiments [here](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a).
+
+  A publication containing the guidelines of the dataset is **coming soon**.
+
+## Evaluation results
+
+[In this file](https://github.com/Living-with-machines/AtypicalAnimacy/blob/develop/evaluation.md) you can find the evaluation results of our experiments (partially in Table 5 of the paper).
 
 ## Citation
 
