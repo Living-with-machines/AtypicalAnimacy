@@ -142,4 +142,4 @@ Work for this paper was produced as part of [Living with Machines](http://living
 ## License
 
 - The source codes are licensed under MIT License Copyright (c) 2020 Living with Machines.
-- The [dataset](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a) hosted on the British Library Research Repository are licensed under CC0 1.0 Universal Public Domain.
+- The [atypical animacy dataset](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a) hosted on the British Library Research Repository is licensed under CC0 1.0 Universal Public Domain.
