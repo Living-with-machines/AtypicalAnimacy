@@ -14,14 +14,14 @@ This repository provides underlying code and materials for the paper 'Living Mac
 
 ## Table of contents
 
-* [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#installation)
-* [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#directory-structure)
-* [Description of the codes](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#description-of-the-codes)
-* [Description of the datasets](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#description-of-the-datasets)
-* [Evaluation results](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#evaluation-results)
-* [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#citation)
-* [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#acknowledgements)
-* [License](https://github.com/Living-with-machines/AtypicalAnimacy/tree/master#license)
+* [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/#installation)
+* [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/#directory-structure)
+* [Description of the codes](https://github.com/Living-with-machines/AtypicalAnimacy/#description-of-the-codes)
+* [Description of the datasets](https://github.com/Living-with-machines/AtypicalAnimacy/#description-of-the-datasets)
+* [Evaluation results](https://github.com/Living-with-machines/AtypicalAnimacy/#evaluation-results)
+* [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/#citation)
+* [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/#acknowledgements)
+* [License](https://github.com/Living-with-machines/AtypicalAnimacy/#license)
 
 ## Installation
 
@@ -115,7 +115,7 @@ Experiments are performed on two different datasets:
 
 ## Evaluation results
 
-[In this file](https://github.com/Living-with-machines/AtypicalAnimacy/blob/develop/evaluation.md) you can find the evaluation results of our experiments (partially reported in Table 5 of the paper).
+The evaluation results of our experiments (partially reported in Table 5 of the paper) can be found [in this file](https://github.com/Living-with-machines/AtypicalAnimacy/blob/main/evaluation.md).
 
 ## Citation
 
