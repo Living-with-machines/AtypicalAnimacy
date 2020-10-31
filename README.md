@@ -115,7 +115,7 @@ Experiments are performed on two different datasets:
 
 ## Evaluation results
 
-[In this file](https://github.com/Living-with-machines/AtypicalAnimacy/blob/develop/evaluation.md) you can find the evaluation results of our experiments (partially in Table 5 of the paper).
+[In this file](https://github.com/Living-with-machines/AtypicalAnimacy/blob/develop/evaluation.md) you can find the evaluation results of our experiments (partially reported in Table 5 of the paper).
 
 ## Citation
 
@@ -141,4 +141,4 @@ Work for this paper was produced as part of [Living with Machines](http://living
 ## License
 
 - The source codes are licensed under MIT License Copyright (c) 2020 Living with Machines.
-- The datasets hosted on [zenodo](xxxxxx) **TODO:FIX PATH** are licensed under CC-BY-4.0.
+- The [dataset](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a) hosted on the British Library Research Repository are licensed under CC0 1.0 Universal Public Domain.
