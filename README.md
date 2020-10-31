@@ -17,7 +17,7 @@ This repository provides underlying code and materials for the paper 'Living Mac
 * [Installation](https://github.com/Living-with-machines/AtypicalAnimacy/#installation)
 * [Directory structure](https://github.com/Living-with-machines/AtypicalAnimacy/#directory-structure)
 * [Description of the codes](https://github.com/Living-with-machines/AtypicalAnimacy/#description-of-the-codes)
-* [Description of the datasets](https://github.com/Living-with-machines/AtypicalAnimacy/#description-of-the-datasets)
+* [Datasets and resources](https://github.com/Living-with-machines/AtypicalAnimacy/#datasets-and-resources)
 * [Evaluation results](https://github.com/Living-with-machines/AtypicalAnimacy/#evaluation-results)
 * [Citation](https://github.com/Living-with-machines/AtypicalAnimacy/#citation)
 * [Acknowledgements](https://github.com/Living-with-machines/AtypicalAnimacy/#acknowledgements)
