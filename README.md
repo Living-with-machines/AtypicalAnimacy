@@ -105,14 +105,19 @@ To train and evaluate the LSTM classifier, run the following notebook:
 
 ## Datasets and resources
 
-Experiments are performed on two different datasets:
-* **_Stories_ dataset:** dataset described in Tables 1 and 3 of the paper, generated from the animacy dataset annotated in 
-  > Jahan, Labiba, Geeticka Chauhan, and Mark Finlayson. "A new approach to animacy detection." In Proceedings of the 27th International Conference on Computational Linguistics, pp. 1-12. 2018.
-  Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
-  
-* **_19thC Machines_ dataset:** atypical animacy dataset, described in Tables 2 and 3 of the paper, annotated by us, based on nineteenth-century sentences in English extracted from an [open dataset of nineteenth-century books digitized by the British Library](https://data.bl.uk/digbks/db14.html). Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
+Run `code/setup.ipynb` to download and prepare the data and resources used in the experiments.
 
-* **[Coming soon]** Historical BERT and Word2vec models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. :construction:
+#### _Stories_ dataset
+Dataset described in Tables 1 and 3 of the paper, generated from the animacy dataset annotated in:
+  > Jahan, Labiba, Geeticka Chauhan, and Mark Finlayson. "A new approach to animacy detection." In Proceedings of the 27th International Conference on Computational Linguistics, pp. 1-12. 2018.
+
+Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
+  
+#### _19thC Machines_ dataset
+Atypical animacy dataset, described in Tables 2 and 3 of the paper, annotated by us, based on nineteenth-century sentences in English extracted from an [open dataset of nineteenth-century books digitized by the British Library](https://data.bl.uk/digbks/db14.html). Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
+
+#### Language models
+**[Coming soon]** Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. :construction:
 
 ## Evaluation results
 
