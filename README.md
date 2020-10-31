@@ -103,15 +103,16 @@ To apply the classifiers on new data, run the following notebook:
 To train and evaluate the LSTM classifier, run the following notebook:
 * `code/train_LSTM_seq_classifiers.ipynb`
 
-## Description of the datasets
+## Datasets and resources
 
 Experiments are performed on two different datasets:
-* _Stories_ dataset: generated from the animacy dataset created in 
+* **_Stories_ dataset:** dataset described in Tables 1 and 3 of the paper, generated from the animacy dataset annotated in 
   > Jahan, Labiba, Geeticka Chauhan, and Mark Finlayson. "A new approach to animacy detection." In Proceedings of the 27th International Conference on Computational Linguistics, pp. 1-12. 2018.
   Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
-* _19thC Machines_ dataset: Atypical animacy dataset, annotated by us, based on nineteenth-century sentences in English extracted from an open dataset of nineteenth-century books digitized by the British Library (available [here](https://data.bl.uk/digbks/db14.html), DOI [10.21250/db14](https://doi.org/10.21250/db14), British Library Labs, 2014). This dataset contains 598 sentences containing mentions of machines. Each sentence has been annotated according to the animacy and humanness of the machine in the sentence. You can download the annotated dataset used in our experiments [here](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a).
+  
+* **_19thC Machines_ dataset:** atypical animacy dataset, described in Tables 2 and 3 of the paper, annotated by us, based on nineteenth-century sentences in English extracted from an [open dataset of nineteenth-century books digitized by the British Library](https://data.bl.uk/digbks/db14.html). Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
 
-  A publication containing the guidelines of the dataset is **coming soon**.
+* **[Coming soon]** Historical BERT and Word2vec models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. :construction:
 
 ## Evaluation results
 
