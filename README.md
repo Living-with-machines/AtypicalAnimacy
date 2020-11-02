@@ -117,7 +117,7 @@ Run `code/setup.ipynb` to download it and convert it to the format used in our e
 Atypical animacy dataset, described in Tables 2 and 3 of the paper, annotated by us, based on nineteenth-century sentences in English extracted from an [open dataset of nineteenth-century books digitized by the British Library](https://data.bl.uk/digbks/db14.html). Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
 
 #### Language models
-**[Coming soon]** Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. :construction:
+Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. **[Expected release early 2021]** :construction:
 
 ## Evaluation results
 
