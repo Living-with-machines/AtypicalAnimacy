@@ -126,17 +126,28 @@ The evaluation results of our experiments (partially reported in Table 5 of the 
 ## Citation
 
 ```
-Mariona Coll Ardanuy, Federico Nanni, Kaspar Beelen, Kasra Hosseini, Ruth Ahnert, J. Lawrence, Katherine McDonough, Giorgia Tolfo, Daniel C. Wilson and Barbara McGillivray. "Living Machines: A study of atypical animacy." In Proceedings of the 28th International Conference on
-Computational Linguistics (COLING2020).
+Mariona Coll Ardanuy, Federico Nanni, Kaspar Beelen, Kasra Hosseini, Ruth Ahnert, Jon Lawrence, Katherine McDonough, Giorgia Tolfo, Daniel CS Wilson and Barbara McGillivray. "Living Machines: A study of atypical animacy." In Proceedings of the 28th International Conference on Computational Linguistics (COLING), pp. 4534--4545. 2020.
 ```
 
 ```
-@inproceedings{collardanuy2020living,
+@inproceedings{coll-ardanuy-etal-2020-living,
     title = "Living Machines: A study of atypical animacy",
-    author = "Mariona Coll Ardanuy and Federico Nanni and Kaspar Beelen and Kasra Hosseini and Ruth Ahnert and Jon Lawrence and Katherine McDonough and Giorgia Tolfo and Daniel CS Wilson and Barbara McGillivray",
-    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics (COLING 2020)",
+    author = "Coll Ardanuy, Mariona  and
+      Nanni, Federico  and
+      Beelen, Kaspar  and
+      Hosseini, Kasra  and
+      Ahnert, Ruth  and
+      Lawrence, Jon  and
+      McDonough, Katherine  and
+      Tolfo, Giorgia  and
+      Wilson, Daniel CS  and
+      McGillivray, Barbara",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics (COLING)",
     year = "2020",
-    publisher = "Association for Computational Linguistics",
+    address = "Barcelona (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.coling-main.400",
+    pages = "4534--4545",
 }
 ```
 
@@ -146,5 +157,6 @@ Work for this paper was produced as part of [Living with Machines](http://living
 
 ## License
 
-- The source codes are licensed under MIT License Copyright (c) 2020 Living with Machines.
+- The source codes are licensed under MIT License.
+- Copyright (c) 2020 The Alan Turing Institute, British Library Board, Queen Mary University of London, University of Exeter, University of East Anglia and University of Cambridge.
 - The [atypical animacy dataset](https://bl.iro.bl.uk/work/ns/323177af-6081-4e93-8aaf-7932ca4a390a) hosted on the British Library Research Repository is licensed under CC0 1.0 Universal Public Domain.
