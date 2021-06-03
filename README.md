@@ -117,7 +117,21 @@ Run `code/setup.ipynb` to download it and convert it to the format used in our e
 Atypical animacy dataset, described in Tables 2 and 3 of the paper, annotated by us, based on nineteenth-century sentences in English extracted from an [open dataset of nineteenth-century books digitized by the British Library](https://data.bl.uk/digbks/db14.html). Run `code/setup.ipynb` to download it and convert it to the format used in our experiments.
 
 #### Language models
-Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset. **[Expected release early 2021]** :construction:
+Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Books_](https://data.bl.uk/digbks/db14.html) dataset can be downloaded from [Zenodo](https://zenodo.org/record/4782245). For more information, you can read [this paper](https://arxiv.org/abs/2105.11321) and look at [its Github repository](https://github.com/Living-with-machines/histLM).
+
+If you use these models, please cite:
+```
+Hosseini, Kasra, Kaspar Beelen, Giovanni Colavizza, and Mariona Coll Ardanuy. "Neural Language Models for Nineteenth-Century English." arXiv preprint arXiv:2105.11321 (2021).
+```
+
+```
+@article{hosseini2021neural,
+  title={Neural Language Models for Nineteenth-Century English},
+  author={Hosseini, Kasra and Beelen, Kaspar and Colavizza, Giovanni and Coll Ardanuy, Mariona},
+  journal={arXiv preprint arXiv:2105.11321},
+  year={2021}
+}
+```
 
 ## Evaluation results
 
