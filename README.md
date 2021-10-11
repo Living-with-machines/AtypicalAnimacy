@@ -52,6 +52,8 @@ cd /path/to/my/AtypicalAnimacy
 pip install -r requirements.txt
 ```
 
+:warning: We have noticed that, in some machines, `fasttext` installation crashes. In this case, installing it at the end via `conda` seems to work: `conda install -c conda-forge fasttext`.
+
 * Allow the newly created `py37animacy` environment to show up in the notebooks:
 
 ```bash
