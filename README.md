@@ -52,6 +52,8 @@ cd /path/to/my/AtypicalAnimacy
 pip install -r requirements.txt
 ```
 
+:warning: We have noticed that, in some macOS, installation of`fasttext` crashes. This issue has been reported, see [here](https://github.com/facebookresearch/fastText/issues/753).
+
 * Allow the newly created `py37animacy` environment to show up in the notebooks:
 
 ```bash
@@ -121,15 +123,17 @@ Nineteenth-century BERT and Word2vec English models trained on the [_19thC BL Bo
 
 If you use these models, please cite:
 ```
-Hosseini, Kasra, Kaspar Beelen, Giovanni Colavizza, and Mariona Coll Ardanuy. "Neural Language Models for Nineteenth-Century English." arXiv preprint arXiv:2105.11321 (2021).
+Hosseini, Kasra, Beelen, Kaspar, Colavizza, Giovanni, & Coll Ardanuy, Mariona (2021). Neural Language Models for Nineteenth-Century English. Journal of Open Humanities Data, 7: 22, pp. 1–6. DOI: https://doi.org/10.5334/johd.48
 ```
 
 ```
 @article{hosseini2021neural,
   title={Neural Language Models for Nineteenth-Century English},
   author={Hosseini, Kasra and Beelen, Kaspar and Colavizza, Giovanni and Coll Ardanuy, Mariona},
-  journal={arXiv preprint arXiv:2105.11321},
-  year={2021}
+  journal={Journal of Open Humanities Data},
+  year={2021},
+  volume = {7:22},
+  pages = {1--6}
 }
 ```
 
